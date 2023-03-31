@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  '@builder.io/sdk-qwik':
+    specifier: ^0.1.15
+    version: 0.1.15(@builder.io/qwik@0.100.0)
+
 devDependencies:
   '@builder.io/qwik':
     specifier: 0.100.0
@@ -67,7 +72,14 @@ packages:
       undici: ^5.14.0
     dependencies:
       undici: 5.21.0
-    dev: true
+
+  /@builder.io/sdk-qwik@0.1.15(@builder.io/qwik@0.100.0):
+    resolution: {integrity: sha512-6Tv4SO22H0AZ2cYSaeiAC6rmIWMrIu3YYAGXgvq2ZyUWBaPDZYGQzy6v0sXG2XPj6Y6om2Kfb7PHMbTiL2Hkug==}
+    peerDependencies:
+      '@builder.io/qwik': '>=0.13.3'
+    dependencies:
+      '@builder.io/qwik': 0.100.0(undici@5.21.0)
+    dev: false
 
   /@cush/relative@1.0.0:
     resolution: {integrity: sha512-RpfLEtTlyIxeNPGKcokS+p3BZII/Q3bYxryFRglh5H3A3T8q9fsLYm72VYAMEOOIBLEa8o93kFLiBDUWKrwXZA==}
@@ -671,7 +683,6 @@ packages:
     engines: {node: '>=10.16.0'}
     dependencies:
       streamsearch: 1.1.0
-    dev: true
 
   /call-bind@1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
@@ -2332,7 +2343,6 @@ packages:
   /streamsearch@1.1.0:
     resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
     engines: {node: '>=10.0.0'}
-    dev: true
 
   /string.prototype.trim@1.2.7:
     resolution: {integrity: sha512-p6TmeT1T3411M8Cgg9wBTMRtY2q9+PNy9EV1i2lIXUN/btt763oIfxwN3RR8VU6wHX8j/1CFy0L+YuThm6bgOg==}
@@ -2513,7 +2523,6 @@ packages:
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
-    dev: true
 
   /unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
